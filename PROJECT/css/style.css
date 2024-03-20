@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-bg-color:blue;  
+  }
+  /* search css variable mdn reference */
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    display: flex;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+ .logo img{
+    height: 48px;
+    padding: 0 25px;
+    
+ }
+
+ul{
+    height: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li:hover{
+    color: black;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+   
+    align-items: center;
+}
+  input{
+    height: 24px;
+    width:30vw;
+    border-radius: 3px;
+    margin-left:0 16px 0 56px;
+    padding: 0 12px;
+    
+ }
+  .btn{
+     
+       margin:0 10px 0 16px;
+       padding: 5px 5px;
+      border-radius: 3px;
+      color: white;
+      background-color: var(--main-bg-color);
+      border: 2px solid wheat;
+      cursor: pointer;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 900;
+
+ }
+.container{
+    min-height:calc(100vh - 70px - 12vh);
+}
+
+   .container .slider{
+    display: flex;
+    justify-content: center;
+    margin: 9px auto;
+    overflow: hidden;
+        
+    }
+    .card{    
+     margin: auto;
+     max-width: 91vw;
+    
+    }
+    .cards{
+      display: flex;
+      flex-direction:row;
+     /* justify-content: center; */
+    }
+    .card-item{
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 15px;
+      
+    }
+    h2{
+        font-family: 'Oswald', sans-serif;
+    }
+  .my2{
+    margin: 26px 0;
+  }
+   .text-centre{
+    text-align: center;
+   }
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}

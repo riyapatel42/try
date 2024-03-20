@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pset8c</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            height: 10vh;
+        }
+    main{
+        background-color: blueviolet;
+        height: 90vh;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes slide1 {
+        from{
+            transform: translate(-8vw);
+        }
+        to{
+            transform: translate(85vw);
+        }
+    }
+    @keyframes slide2 {
+        from{
+            transform: translate(0vw);
+        }
+        to{
+            transform: translate(92vw);
+        }
+    }
+    .slider{
+        background-color: aquamarine;
+        height: 400px;
+      
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    .img1{
+        transform: translate(-8vw);
+        animation: slide1 1s 2s forwards ;
+
+    }
+    .img2{
+        transform: translate(0vw);
+        animation: slide2 1s 2s forwards ;
+    }
+    .img3{
+        transform: translate(8vw);
+       
+    }
+    
+    </style>
+</head>
+<body>
+    <header></header>
+<main>
+    <div class="slider">
+        <img class="img1" src="/IMG/ranbirr.jpg" >
+        <img class="img2" src="/IMG/aliaa.jpg">
+        <img class="img3" src="/IMG/ranbirr.jpg">
+    </div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.red{
+    color:black;
+    background-color: darkgreen;
+    height: 98px;
+}
+.blue{
+ background-color:yellowgreen
+}
+ *{
+    margin: 0;
+    padding: 0;
+}
